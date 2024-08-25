@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    background-color: #10162e;
+  }
+  
+  .container {
+    width: min(90%, 43.75em);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    color: #ffffff;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 2em;
+    font-weight: 600;
+  }
+  
+  .input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+    gap: 1em; /* Add space between the label and the input field */
+  }
+  
+  input {
+    font-size: 1em;
+    width: 6.25em;
+    padding: 0.5em;
+    border: none;
+    outline: none;
+    background-color: #172b5c;
+    color: #ffffff;
+    border-radius: 0.25em; /* Added border-radius for rounded corners */
+  }
+  
+  input:focus {
+    border: 2px solid #45bfff; /* Highlight input field on focus */
+  }
+  
+  button {
+    font-size: 1em;
+    display: block;
+    background-color: #45bfff;
+    color: #ffffff;
+    padding: 1em;
+    margin: 1em auto 2em auto;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+  }
+  
+  button:hover {
+    background-color: #1e9bff; /* Slightly darker blue on hover */
+  }
+  
+  button:active {
+    transform: scale(0.98); /* Subtle button press effect */
+  }
+  
+  #result {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+    gap: 0.6em;
+    margin-top: 1em; /* Added margin for spacing */
+  }
+  
+  .planet-box {
+    padding: 1em;
+    background-color: #172b5c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 0.5em;
+  }
+  
+  .planet-box img {
+    width: 90%;
+    height: auto;
+  }
+  
